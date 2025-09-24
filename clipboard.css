@@ -326,13 +326,16 @@ border: none;`
        justify-content: center;
        align-items: center; 
        align-content: center;
+       padding-top: 50px;   
    }
    .foot-text {
-       display: flex;
-       flex-direction: row;
-       text-align: left;
-       gap: 30px 90px;
-       box-sizing: content-box;
+       display: grid;
+       grid-template-columns: 80px 80px 80px;
+       grid-template-rows: 50px 50px;    
+       gap: 30px 50px;   
+       text-align: l;
+       margin-right: 250px;
+       background: lightblue;
    }
    .first {
        order: 0;
@@ -361,6 +364,8 @@ border: none;`
    }
    .foot-imgs {
        column-gap: 26px;
+   }
+   .foot-imgs img {
        cursor: pointer;
    }
 }
@@ -388,5 +393,9 @@ border: none;`
        flex-direction: row;
        column-gap: 95px;
        justify-content: center;
+    }
+    
+    .foot-text {
+        margin-right: 317px"";
     }
 }
