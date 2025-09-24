@@ -1,0 +1,392 @@
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background: white;
+    margin: 0;
+    text-align: center;
+}
+
+.img-bg {
+    background-image: url('/images/bg-header-mobile.png'), linear-gradient(to bottom, white, white);
+    background-position: top center;
+    height: 300px;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.logo {
+    margin-top: 123px;
+    margin-bottom: 72px;
+}
+
+h1 {
+   font-size: 30px;
+   margin: 0;
+   margin-bottom: 22px;
+}
+
+h1 h2 {
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+
+h2 {
+    width: 70%;
+    margin: 0 auto 25px;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 auto;
+    width: 85%
+}
+
+section {
+    padding: 0 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-top: 52px;
+    margin-bottom: 167px;
+}
+
+.green-button {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bai Jamjuree';
+    font-weight: 500;
+    box-shadow: 0 3px #219987, 0 8px 16px rgba(38,186,164,0.4);
+}
+
+.green-button { -webkit-border-radius: 28; -moz-border-radius: 28; border-radius: 28px; color: #ffffff; font-size: 18px; background: #26BAA4; padding: 10px 10px 10px 10px; text-decoration: none; 
+border: none;`
+} 
+
+.green-button:hover { 
+    backgrod: #3cb0fd;        
+    text-decoration: none; 
+}
+
+.purple-button {
+    height: 56px;
+    font-family: 'Bai Jamjuree';
+    -webkit-border-radius: 28; -moz-border-radius: 28; border-radius: 28px; color: #ffffff; font-size: 18px; background: #6173FF; padding: 10px 10px 10px 10px; text-decoration: none; 
+    border: none;
+    box-shadow: 0 3px #3C55FF, 0 5px 12px rgba(0,0,0,0.2);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+    
+.purple-button: hover { 
+    text-decoration: none;
+}
+
+.wrapped-text {
+    margin-top: 69px;
+}
+.comp-img {
+    margin: 0 0 61px;
+    height: 236px;
+    width: 314px;
+}
+
+.evenly-spaced {
+    margin-top: 60px;
+}
+
+.bigger-h2 {
+    font-size: 27px;
+    margin: 200px auto 30px;
+}
+
+.big-h2 {
+    font-size: 27px;
+}
+
+.device-img {
+    height: 180px;
+    width: 310px;
+    margin: 68px 0 139px;
+}
+
+.clipboard-uses {
+    margin: 97px 0 138px;
+}
+.clipboard-uses img {
+    margin-bottom: 50px;
+}
+
+.clipboard-uses h2 {
+    margin-bottom: 30px;
+}
+
+.clipboard-uses p {
+    margin-bottom: 63px;
+}
+
+/*Company Images*/
+.company-imgs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 175px;
+    row-gap: 65px;
+    align-items: center;
+}
+
+.google {
+    width: 139px;
+    height: 38px;
+}
+.ibm {
+    width: 104px;
+    height: 38px;
+}
+.microsoft {
+    width: 135px;
+    height: 29px;
+}
+.hp {
+    width: 115px;
+    height: 45px;
+}
+.vecgraph {
+    width: 107px;
+    height: 27px;
+}
+
+/*FOOTER*/
+.footnotes {
+    background-color: hsla(210, 10%, 33%, 0.1);
+    color: hsl(210, 10%, 33%);
+    padding: 53px 0 50px;
+}
+
+.footnote-logo {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 49px;
+}
+
+.foot-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 37px;
+    margin-bottom: 55px;
+}
+.foot-text p:hover {
+       color: hsl(171, 66%, 44%);
+}   
+
+.foot-imgs {
+    display: flex;
+    column-gap: 52px;
+    justify-content: center;
+    align-items: center;
+}
+.foot-imgs img:hover {
+       fill: hsl(171, 66%, 44%);
+}
+
+/*DESKTOP VIEW*/
+@media only screen and (min-width: 1000px) {
+    .img-bg {
+    background-image: url('/images/bg-header-desktop.png'), linear-gradient(to bottom, white, white);
+    background-position: top center;
+    height: 300px;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.5);
+   }
+   h1 {
+       font-size: 45px;
+       margin-bottom: 30px;
+   }
+   h2 {
+       font-size: 32px;
+       margin-bottom: 32px;
+   }
+   .big-h2, .bigger-h2 {
+       font-size: 37px;
+   }
+   p {
+       font-size: 24px;
+   }
+   .buttons {
+       display: flex;
+       flex-direction: row;
+       margin-top: 52px;
+       margin-bottom: 161px;
+       column-gap: 17px;
+       justify-content: center;
+       align-items: center;
+   }
+   .buttons button {
+       height: 53px;
+       width: 226px;
+       display: inline;
+       cursor: pointer;
+   }
+   
+   /*WRAPPED COMPUTER IMAGE*/
+   .wrapped-text {
+       margin-top: 83px;
+       margin-bottom: 160px;
+       display: flex;
+       flex-direction: row;
+       column-gap: 109px;
+       position: relative;
+       left: -150px;
+       width: 100%;
+       backgroud: lightblue;
+       padding-right: 0;
+   }
+   .wrapped-text img {
+       height: 500px;
+       width: 658px;
+       margin-top: 200px;
+   }
+   .rightside-text {
+       margin-top : 75px;
+       text-align: left;
+   }
+   .rightside-text p {
+       font-size: 21px;
+       margin: 0 0 60px;
+   }
+   .rightside-text h2 {
+       margin: 0 0 20px;
+   }
+
+   .evenly-spaced {
+       margin-top: 40px;
+   }
+   .device-img {
+       margin: 115px 0 174px;
+       width: 809px;
+       height: 470px;
+   }
+   
+   /*CLIPBOARD USES DIV*/
+   .clipboard-uses {
+       margin: 81px 0 170px;
+       display: flex;
+       flex-direction: row;
+       column-gap: 44px;
+       justify-content: center;
+   }
+   .clipboard-uses div img {
+       margin-bottom: 48px;
+   }
+   
+   /*COMPANY IMAGES DIV*/
+   .company-imgs {
+       margin-bottom: 170px;
+       display: flex;
+       flex-direction: row;
+       column-gap: 60px;
+       justify-content: center;
+   }
+   .google {
+       width: 165px;
+       height: 45px;
+   }
+   .ibm {
+       width: 123px;
+       height: 52px;
+   }
+   .microsoft {
+       width: 158px;
+       height: 35px;
+   }
+   .hp {
+       width: 136px;
+       height: 54px;
+   }
+   .vecgraph {
+       width: 126px;
+       height: 32px;
+   }
+   .lower-buttons {
+       margin-top: 51px;
+       margin-bottom: 146px;
+   }
+   
+   /*FOOTER*/
+   .footnotes {
+       height: 150px;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center; 
+       align-content: center;
+   }
+   .foot-text {
+       display: flex;
+       flex-direction: row;
+       text-align: left;
+       gap: 30px 90px;
+       box-sizing: content-box;
+   }
+   .first {
+       order: 0;
+   }
+   .second {
+       order: 1;
+   }
+   .third {
+       order: 2;
+   }
+   .fourth {
+       order: 3;
+   }
+   .fifth {
+       order: 4;
+   }
+   .foot-text p:hover {
+       color: hsl(171, 66%, 44%);
+       cursor: pointer;
+   }   
+   
+   .footnote-logo {
+       width: 54px;
+       height: 54px;
+       margin-right: 132px;
+   }
+   .foot-imgs {
+       column-gap: 26px;
+       cursor: pointer;
+   }
+}
+
+@media only screen and (min-width: 1400px) {
+    .wrapped-text {
+        position: relative;
+        left: -100px;
+        column-gap: 109px;
+    }
+    .wrapped-text img {
+        height: 572px;
+        width: 719px;
+        margin-top: 0;
+    }
+    .rightside-text {
+        margin-top: 85px;
+    }
+    .rightside-text p {
+        margin-bottom: 69px;
+    }
+    .company-imgs {
+       margin-bottom: 170px;
+       display: flex;
+       flex-direction: row;
+       column-gap: 95px;
+       justify-content: center;
+    }
+}
