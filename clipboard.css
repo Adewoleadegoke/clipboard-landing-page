@@ -25,7 +25,7 @@ h1 {
 }
 
 h1 h2 {
-    color: hsl(210, 10%, 33%);
+    color: hsla(210, 10%, 33%, 0.1);
     font-weight: 600;
 }
 
@@ -39,7 +39,7 @@ p {
     font-size: 18px;
     font-weight: 400;
     margin: 0 auto;
-    width: 85%
+    width: 80%;
 }
 
 section {
@@ -181,20 +181,28 @@ border: none;`
     row-gap: 37px;
     margin-bottom: 55px;
 }
-.foot-text p:hover {
+.foot-text a:hover {
        color: hsl(171, 66%, 44%);
 }   
-
+a {
+    color: hsl(201, 11%, 66%);
+    text-decoration: none;
+}
+.foot-text div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
 .foot-imgs {
     display: flex;
     column-gap: 52px;
     justify-content: center;
     align-items: center;
 }
-.foot-imgs img:hover {
-       fill: hsl(171, 66%, 44%);
-}
 
+.foot-imgs img:hover {
+  filter: invert(53%) sepia(79%) saturate(406%) hue-rotate(122deg) brightness(95%) contrast(94%);
+}
 /*DESKTOP VIEW*/
 @media only screen and (min-width: 1000px) {
     .img-bg {
@@ -216,6 +224,12 @@ border: none;`
        font-size: 37px;
    }
    p {
+       font-size: 24px;
+       max-width: 60%;
+   }
+   a {
+       display: block;
+       text-decoration: none;
        font-size: 24px;
    }
    .buttons {
@@ -285,6 +299,9 @@ border: none;`
        margin-bottom: 48px;
    }
    
+   .clipboard-uses div {
+       width: 30%;
+   }   
    /*COMPANY IMAGES DIV*/
    .company-imgs {
        margin-bottom: 170px;
@@ -330,29 +347,21 @@ border: none;`
    }
    .foot-text {
        display: grid;
-       grid-template-columns: 80px 80px 80px;
-       grid-template-rows: 50px 50px;    
+       grid-template-columns: repeat(3, 1fr);
+       /*grid-template-rows: 50px 50px;*/   
        gap: 30px 50px;   
-       text-align: l;
-       margin-right: 250px;
-       background: lightblue;
+       text-align: ;
+       margin-right: 80px;
    }
-   .first {
-       order: 0;
+   
+   .foot-text div {
+       white-space: nowrap;
+       text-align: left;
+       display: flex;
+       flex-direction: column;
+       row-gap: 30px;
    }
-   .second {
-       order: 1;
-   }
-   .third {
-       order: 2;
-   }
-   .fourth {
-       order: 3;
-   }
-   .fifth {
-       order: 4;
-   }
-   .foot-text p:hover {
+   .foot-text a:hover {
        color: hsl(171, 66%, 44%);
        cursor: pointer;
    }   
@@ -360,7 +369,7 @@ border: none;`
    .footnote-logo {
        width: 54px;
        height: 54px;
-       margin-right: 132px;
+       margin-right: 100px;
    }
    .foot-imgs {
        column-gap: 26px;
@@ -396,6 +405,9 @@ border: none;`
     }
     
     .foot-text {
-        margin-right: 317px"";
+        margin-right: 317px;
+    }
+    .footnote-logo {
+        margin-right: 132px;
     }
 }
